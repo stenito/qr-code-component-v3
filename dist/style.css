@@ -1,0 +1,91 @@
+:root {
+  --color-blue: hsl(216, 95%, 58%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  -webkit-font-feature-settings: "kern";
+          font-feature-settings: "kern";
+  font-size: 15px;
+  font-synthesis: none;
+  height: 100%;
+  min-height: 100%;
+  scroll-behavior: auto;
+  -webkit-font-smoothing: antialiased;
+  font-smooth: always;
+  text-rendering: geometricPrecision;
+}
+
+*,
+*:before,
+*::before,
+*:after,
+*::after {
+  -webkit-tap-highlight-color: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+}
+
+.container {
+  align-items: center;
+  background-color: var(--color-light-gray);
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+}
+.container .card {
+  background-color: var(--color-white);
+  border-radius: 20px;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05);
+  color: var(--color-dark-blue);
+  height: 497px;
+  padding: 16px;
+  width: 320px;
+}
+.container .card .qr {
+  background: url(./images/oval-top.svg) left top no-repeat, url(./images/oval-bottom.svg) right bottom no-repeat;
+  background-color: var(--color-blue);
+  border-radius: 10px;
+  height: 288px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card .qr img {
+  width: 160px;
+  height: auto;
+}
+.container .card h2 {
+  font-size: 22px;
+  font-weight: 700;
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
+  -webkit-margin-before: 24px;
+          margin-block-start: 24px;
+  text-align: center;
+}
+.container .card p {
+  color: var(--color-grayish-blue);
+  -webkit-margin-after: 27px;
+          margin-block-end: 27px;
+  -webkit-margin-before: 20px;
+          margin-block-start: 20px;
+  -webkit-padding-end: 15px;
+          padding-inline-end: 15px;
+  -webkit-padding-start: 15px;
+          padding-inline-start: 15px;
+  text-align: center;
+}
